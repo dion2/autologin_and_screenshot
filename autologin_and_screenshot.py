@@ -23,7 +23,8 @@ elem_password = browser.find_element_by_name("password")
 elem_password.clear
 elem_password.send_keys("Password")  
 browser.find_element_by_id("btn-submit").submit()
-time.sleep(1)  
+# 暫停幾秒讓登入存取時間
+time.sleep(15)  
 # 拍攝全螢幕
 im = ImageGrab.grab()
 # 時間點為檔名
