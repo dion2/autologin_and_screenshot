@@ -17,11 +17,11 @@ browser.get('http://127.0.0.1/d-crm/login/login.php')
 # 輸入帳號
 elem_user = browser.find_element_by_name("account")
 elem_user.clear
-elem_user.send_keys("dion")  
+elem_user.send_keys("Username")  
 # 輸入密碼
 elem_password = browser.find_element_by_name("password")
 elem_password.clear
-elem_password.send_keys("1234")  
+elem_password.send_keys("Password")  
 browser.find_element_by_id("btn-submit").submit()
 time.sleep(1)  
 # 拍攝全螢幕
